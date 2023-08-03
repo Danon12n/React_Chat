@@ -1,0 +1,79 @@
+/* блок окна авторизации */
+.authForm {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 10px;
+
+    background: rgb(239, 239, 239);
+    padding: 30px;
+    border-radius: 15px;
+
+    & &__input {
+        padding: 10px;
+        background: rgb(193, 193, 193);
+        border: none;
+        border-radius: 5px;
+
+        font-size: 16px;
+
+        margin-bottom: 20px;
+
+        &:focus {
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+    }
+
+    & &__button {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        transition: 0.5s;
+
+        background: #00025e; 
+    
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        
+        &:hover {
+            transition: 0.5s;
+            background: #0004e8;    
+        }
+    }
+}
+
+.circle {
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+
+    filter: blur(10px);
+}
+
+.white {
+    background: white;
+}
+
+.green {
+    background: green;
+}
+
+.small {
+    width: 50px;
+    height: 50px;
+}
+
+.medium {
+    width: 100px;
+    height: 100px;
+}
+
+.large {
+    width: 150px;
+    height: 150px;
+}
